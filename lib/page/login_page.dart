@@ -11,16 +11,16 @@ class LoginPage extends StatelessWidget {
               'assets/image/login.png',
               fit: BoxFit.cover,
             ),
-            // SizedBox(
-            // height: 20.0,
-            // ),
+            SizedBox(
+            height: 20.0,
+            ),
             Text(
               "Welcome",
-              style: TextStyle(fontSize: 5, fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
-            // SizedBox(
-            // height: 20.0,
-            // ),
+            SizedBox(
+            height: 20.0,
+            ),
             Padding(
               padding: const EdgeInsets.symmetric(vertical:16.0,horizontal: 32.0),
               child: Column(
@@ -35,9 +35,9 @@ class LoginPage extends StatelessWidget {
                     hintText: "Enter Password", 
                     labelText: "Password"),
               ),
-              // SizedBox(
-            // height: 20.0,
-            // ),
+              SizedBox(
+            height: 20.0,
+            ),
               ElevatedButton(onPressed: (){
                 print("hi");
               }, child: Text("Login"),
