@@ -1,9 +1,9 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 import 'package:test1/utils/routes.dart';
 
 class LoginPage extends StatelessWidget {
+  const LoginPage({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Material(
@@ -16,14 +16,14 @@ class LoginPage extends StatelessWidget {
                 fit: BoxFit.cover,
                 height: 400,
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20.0,
               ),
-              Text(
+              const Text(
                 "Welcome",
                 style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20.0,
               ),
               Padding(
@@ -31,24 +31,24 @@ class LoginPage extends StatelessWidget {
                     vertical: 16.0, horizontal: 32.0),
                 child: Column(
                   children: [
-                    TextField(
+                    const TextField(
                       decoration: InputDecoration(
                           hintText: "Enter Username", labelText: "Username"),
                     ),
-                    TextField(
+                    const TextField(
                       obscureText: true,
                       decoration: InputDecoration(
                           hintText: "Enter Password", labelText: "Password"),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 20.0,
                     ),
                     ElevatedButton(
                       onPressed: () {
                         Navigator.pushNamed(context, MyRoutes.homeRoute);
                       },
-                      child: Text("Login"),
-                      style: TextButton.styleFrom(maximumSize: Size(100, 50)),
+                      child: const Text("Login"),
+                      style: TextButton.styleFrom(maximumSize: const Size(100, 50)),
                     )
                   ],
                 ),
